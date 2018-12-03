@@ -1,0 +1,12 @@
+[package]
+name = "libslirp-sys"
+version = "4.0.0"
+authors = ["Marc-André Lureau <marcandre.lureau@redhat.com>"]
+description = "FFI bindings for libslirp."
+license = "MIT"
+keywords = ["network", "bindings"]
+build = "build.rs"
+links = "slirp"
+
+[build-dependencies]
+pkg-config = "0.3.2"
