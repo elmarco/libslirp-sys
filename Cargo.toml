@@ -2,6 +2,9 @@
 name = "libslirp-sys"
 version = "4.0.0"
 authors = ["Marc-André Lureau <marcandre.lureau@redhat.com>"]
+repository = "https://github.com/elmarco/libslirp-sys"
+homepage = "https://github.com/elmarco/libslirp-sys"
+documentation = "https://docs.rs/libslirp-sys"
 description = "FFI bindings for libslirp."
 license = "MIT"
 keywords = ["network", "bindings"]
