@@ -78,7 +78,8 @@ pub struct SlirpCb {
     pub timer_mod: ::std::option::Option<
         unsafe extern "C" fn(timer: *mut c_void, expire_time: i64, opaque: *mut c_void),
     >,
-    pub set_nonblock: ::std::option::Option<unsafe extern "C" fn(fd: c_int, opaque: *mut c_void)>,
+    pub register_poll_fd: ::std::option::Option<unsafe extern "C" fn(fd: c_int, opaque: *mut c_void)>,
+    pub unregister_poll_fd: ::std::option::Option<unsafe extern "C" fn(fd: c_int, opaque: *mut c_void)>,
     pub notify: ::std::option::Option<unsafe extern "C" fn(opaque: *mut c_void)>,
 }
 
